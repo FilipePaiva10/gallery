@@ -1,8 +1,6 @@
 ## App de galeria de fotos + Firebase (Storage)
 
-* 🚀 Versão melhorada: 
-
-    <img src="./github/AppGallery.gif" alt="gif">
+<img src="./github/AppGallery.gif" alt="gif">
 
 ## 😍 Fui além 
 
