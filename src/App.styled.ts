@@ -2,9 +2,17 @@ import styled from "styled-components";
 
 
 export const Container = styled.div`
-    background-color: #27282F;
-    color: #FFF;
+    background-color: ${props => props.theme.background.primary};
+    color: ${props => props.theme.colors.primary};
     min-height: 100vh;
+    padding: 10px;
+
+    @media (max-width: 768px){
+        &{
+            padding: 20px;
+        }
+    }
+
 `;
 
 
@@ -14,17 +22,25 @@ export const Area = styled.div`
     padding: 30px 0;
 `;
 
-
-export const Header = styled.h1`
-    text-align: center;
+export const HeaderArea = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 30px;
 `;
 
+export const Header = styled.h1`
+    text-align: center;
+`;
+
 export const UploadForm = styled.form`
-    background-color: #3d3F43;
+    background-color: ${props => props.theme.background.secundary};
     padding: 15px;
     border-radius: 10px;
     margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 `;
 
 export const Label = styled.label`
@@ -33,17 +49,29 @@ export const Label = styled.label`
 `;
 
 export const Input = styled.input`
+
      &[type="file"]{
         outline: 0;
         border: 0;
         background-color: #756DF4;
-        padding: 8px 16px;
         font-size: 15px;
         border-radius: 10px;
         margin: 0 20px;
         cursor: pointer;
         color: #FFF;
         transition: opacity ease .8s;
+        width: 100%;
+    }
+
+    &[type="file"]::-webkit-file-upload-button{
+        background-color: transparent;
+        padding: 10px 20px;
+        border-radius: 10px;
+        outline: 0;
+        border: 0;
+        color: #FFF;
+        cursor: pointer;
+        width: 30%;
     }
 
     &[type="file"]:hover{
@@ -59,7 +87,7 @@ export const Input = styled.input`
         padding: 8px 16px;
         font-size: 15px;
         border-radius: 10px;
-        margin: 0 20px;
+        margin: 0 10px;
         cursor: pointer;
         color: #FFF;
         transition: opacity ease .8s;
@@ -67,6 +95,19 @@ export const Input = styled.input`
 
     &[type="submit"]:hover{
         opacity: 0.8;
+    }
+
+    @media (max-width: 768px){
+        &[type="file"]{
+            width: 70%;
+        }
+    }
+
+    @media (max-width: 424px){
+        &[type="file"]{
+            width: 72%;
+            margin: 0;
+        }
     }
 
 `;
@@ -81,5 +122,10 @@ export const PhotoList = styled.div`
     display: grid;
     grid-template-columns: repeat(4 , 1fr);
     gap: 10px;
+
+    @media (max-width: 425px){
+        grid-template-columns: repeat(2 , 1fr);
+    }
+
 `;
 

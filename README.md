@@ -1,17 +1,16 @@
 ## App de galeria de fotos + Firebase (Storage)
 
-<!-- * 🚀 Versão melhorada: 
+* 🚀 Versão melhorada: 
 
-    <img src="./github/AppFinanceiro.gif" alt="gif">
+    <img src="./github/AppGallery.gif" alt="gif">
 
 ## 😍 Fui além 
 
+-  ✔️ Responsividade
+-  ✔️ Animações
 -  ✔️ Implementação de ThemeSwitcher
--  ✔️ Adicionar Item
--  ✔️ Filtar por titulo
--  ✔️ Filtrar por categoria
--  ✔️ Icones
--  ✔️ Deletar Item -->
+-  ✔️ Download Item
+-  ✔️ Deletar Item
 
 ## ⚙ Pré Requisitos
 
@@ -31,11 +30,9 @@ Neste projeto foram usadas essas tecnologias:
 
 - ✔️ [uuid](https://www.npmjs.com/package/uuid)
 
-<!-- - ✔️ [React-Switch](https://www.npmjs.com/package/react-switch) -->
+- ✔️ [React-Switch](https://www.npmjs.com/package/react-switch)
 
 - ✔️ [ReactHooks](https://pt-br.reactjs.org/)
-
-<br>
 
 ## Clonar o repositório
 ```bash

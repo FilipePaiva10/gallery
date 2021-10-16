@@ -1,6 +1,6 @@
 import { Photo } from "../types/photo";
 import { storage } from '../libs/firebase';
-import { ref, listAll, getDownloadURL ,uploadBytes, deleteObject } from 'firebase/storage';
+import { ref, listAll, getDownloadURL,uploadBytes, getMetadata , deleteObject } from 'firebase/storage';
 import { v4 as createId } from 'uuid';
 
 export const getAll = async () => {
@@ -9,12 +9,17 @@ export const getAll = async () => {
     const imagesFolder = ref(storage, "Images");
     const photoList = await listAll(imagesFolder);
 
+    console.log(photoList);
+
     for(let i in photoList.items){
 
         let photoUrl = await getDownloadURL(photoList.items[i]);
 
+        let title = photoList.items[i].fullPath.split('-name')[1] || '';
+
         list.push({
             id: photoList.items[i].fullPath,
+            title,
             name: photoList.items[i].name,
             url: photoUrl
         })
@@ -29,7 +34,7 @@ export const insert = async (file: File) => {
 
         const randomName = createId();
 
-        let newFile = ref(storage, `Images/${randomName}`);
+        let newFile = ref(storage, `Images/${randomName}-name${file.name}`);
         let upload = await uploadBytes(newFile, file);
         let photoUrl = await getDownloadURL(upload.ref);
 
