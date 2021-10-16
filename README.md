@@ -1,46 +1,60 @@
-# Getting Started with Create React App
+## App de galeria de fotos + Firebase (Storage)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- * 🚀 Versão melhorada: 
 
-## Available Scripts
+    <img src="./github/AppFinanceiro.gif" alt="gif">
 
-In the project directory, you can run:
+## 😍 Fui além 
 
-### `npm start`
+-  ✔️ Implementação de ThemeSwitcher
+-  ✔️ Adicionar Item
+-  ✔️ Filtar por titulo
+-  ✔️ Filtrar por categoria
+-  ✔️ Icones
+-  ✔️ Deletar Item -->
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## ⚙ Pré Requisitos
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- ✔️ [NodeJS](https://nodejs.org/en/download/)
 
-### `npm test`
+## 🚀 Tecnologias Usadas
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Neste projeto foram usadas essas tecnologias:
 
-### `npm run build`
+- ✔️ [React](https://pt-br.reactjs.org/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- ✔️ [Firebase](https://firebase.google.com/docs/build?hl=pt-br)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- ✔️ [Styled-components](https://styled-components.com/docs/basics#installation)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- ✔️ [TypeScript](https://www.typescriptlang.org/)
 
-### `npm run eject`
+- ✔️ [uuid](https://www.npmjs.com/package/uuid)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<!-- - ✔️ [React-Switch](https://www.npmjs.com/package/react-switch) -->
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- ✔️ [ReactHooks](https://pt-br.reactjs.org/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+<br>
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Clonar o repositório
+```bash
+$ git clone https://github.com/FilipePaiva10/gallery.git
+```
 
-## Learn More
+## Acessar Pasta
+```bash
+cd gallery
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Instalar dependências
+```bash
+npm install
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Rodar Projeto
+```bash
+npm start
+```
+
+## 😃 Gostou? me siga no -> [Likedln](https://www.linkedin.com/in/filipepaiva10/)
